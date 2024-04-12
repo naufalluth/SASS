@@ -1,0 +1,74 @@
+// .main {
+//   background-color: skyblue;
+//   .main-heading {
+//     font-size: 2em;
+//   }
+//   .main-text {
+//     font-size: 1.3em;
+//   }
+// }
+
+// NESTING
+
+// CONTOH NESTING MULTI-SELECTOR
+
+// .main,
+// footer {
+//   h1 {
+//     font-size: 1rem;
+//   }
+//   p {
+//     font-size: 2em;
+//   }
+// }
+
+// NESTING DENGAN MENTARGET PARENT
+
+// .main {
+//   .container & {
+//     background-color: skyblue;
+//   }
+//   .main-heading {
+//     font-size: 2em;
+//   }
+
+//   .main-text {
+//     font-size: 1.5em;
+//   }
+// }
+
+// Subtitute selector dengan "&" parent
+
+// .main {
+//   &-heading {
+//     font-size: 1em;
+//   }
+//   &-text {
+//     font-size: 0.8em;
+//   }
+// }
+
+// Subtitute Selector & including the parent selector
+
+// .main {
+//   & &-heading {
+//     font-size: 1em;
+//   }
+
+//   & &-text {
+//     font-size: 0.6em;
+//   }
+// }
+
+// Subtitute Selector with parent classes (multi)
+
+.main,
+.footer {
+  &-heading {
+    font-size: 1em;
+  }
+
+  &-text {
+    font-size: 0.6em;
+  }
+}
