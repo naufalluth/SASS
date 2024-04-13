@@ -1,0 +1,67 @@
+// PENULISAN VARIABEL PADA CSS VANILLA
+
+// :root {
+//   --primary-color: rgba(123, 123, 123, 1);
+//   --secondary-color: rgba(234, 10, 236, 1);
+//   --text-color: black;
+// }
+
+// VARIABEL HARUS DITULISKAN PADA SELECTOR ROOT AGAR BISA
+// DIAKSES OLEH SEMUA SELECTOR (GLOBAL)
+
+// PENGGUNAAN VARIABEL PADA CSS VANILLA
+
+// body {
+//   background-color: var(--primary-color);
+// }
+
+// h1 {
+//   background-color: var(--secondary-color);
+//   color: var(--text-color);
+// }
+
+// PENULISAN VARIABEL PADA SCSS/SASS
+
+// Variabel dituliskan  dengan menggunakan simbol dollar "$<nama-var>
+
+// $primary: rgb(123, 156, 90);
+// $secondary: rgb(10, 23, 90);
+// $tetriary: rgb(123, 255, 50);
+
+// PENGGUNAAN VARIABEL PADA SASS/SCSS
+
+// p {
+//   background-color: $primary;
+//   color: $tetriary;
+// }
+
+// PENEMPATAN DAN PEMBERLAKUAN VARIABEL PADA ELEMENT TERTENTU (LOCAL)
+
+// body {
+//   $primary: rgb(123, 156, 90);
+//   $secondary: rgb(10, 23, 90);
+//   $tetriary: rgb(123, 255, 50) !global;
+//   background-color: $primary;
+//   h1 {
+//     color: $secondary;
+//   }
+//   p {
+//     color: $secondary;
+//   }
+// }
+
+//AGAR VARIABEL LOCAL BISA BERLAKU SECARA GLOBAL MAKA HARUS DITAMBAHKAN TAG "!global"
+
+// MAPPING PADA VARIABEL SASS/SCSS
+
+// MAPPING DILAKUKAN AGAR TIDAK TERJADI PENULISAN VARIABEL SECARA BERULANG-ULANG (APABILA SUDAH TERDAPAT BANYAK VARIABEL
+
+// PENULISAN MAPPING
+
+$alert: (
+  "blue": blue; "red": #fs1f3f; "green": rgb(123, 255, 50) ;,
+);
+
+h1 {
+  color: map-get($alert, "blue");
+}
