@@ -115,3 +115,5 @@ $social-colors: (
     }
   }
 }
+
+// pada @each, akan mengambilkan key dan value dari mapping. lalu untuk setiap class dalam social yang valuenya diambil d ari $social, akan diberikan nilai warna yang diambil pada $color pasangan yang terdapat pada mappingnya.
