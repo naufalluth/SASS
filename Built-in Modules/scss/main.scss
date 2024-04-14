@@ -1,0 +1,81 @@
+$base-color: salmon;
+
+h1 {
+  color: $base-color;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+// built-in function: color
+/* adjust-color() 
+/* color.adjust($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $alpha: null)
+adjust-color(...) //=> color 
+*/
+
+h1 {
+  //   color: adjust-color($color: $base-color, $blue: 100);
+}
+
+// adjust.hue($color, $degree);
+
+h1 {
+  //   color: adjust-hue($color: $base-color, $degrees: 30);
+}
+
+//Complement($color)
+
+h1 {
+  //   color: complement($color: $base-color);
+}
+
+// darken($color, $amount)
+
+h1 {
+  //   color: darken($color: $base-color, $amount: 20);
+}
+
+// lighten($color, $amount)
+
+h1 {
+  //   color: lighten($color: $base-color, $amount: 10);
+}
+
+// saturate($color, $amount)
+
+h1 {
+  //   color: saturate($color: $base-color, $amount: 10);
+}
+
+// desaturate($color, $amount)
+
+h1 {
+  //   color: desaturate($color: $base-color, $amount: 50);
+}
+
+// grayscale($color)
+
+h1 {
+  //   color: grayscale($base-color);
+}
+
+// mix($color1, $color2, $weight: 50)
+
+h1 {
+  //   color: mix($base-color, blue, 80%);
+}
+
+// fade-in($color, $amount)
+
+h1 {
+  //   color: fade-in(rgba(112, 224, 90, 0.5), 0.2);
+}
+
+// fade-out($color, $amount)
+
+h1 {
+  //   color: fade-out(rgba(112, 224, 90, 0.5), 0.2);
+}
