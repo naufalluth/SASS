@@ -1,0 +1,18 @@
+// MIXIN INLIN-LIST
+
+@mixin inline-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+
+// MIXIN FLEX-BOX
+@mixin flex-box($direction: row, $justifiy: center) {
+  display: flex;
+  justify-content: $justifiy;
+  align-items: center;
+  flex-direction: $direction;
+}

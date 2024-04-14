@@ -1,0 +1,57 @@
+// @import "mixin";
+
+@use "mixin";
+
+.header ul {
+  @include mixin.inline-list();
+  li {
+    background-color: skyblue;
+    padding: 0.6em;
+    border-radius: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.header ul {
+  @include mixin.inline-list();
+  li:hover {
+    background-color: rgb(24, 92, 119);
+    padding: 0.8em;
+
+    a:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer ul {
+  @include mixin.inline-list();
+  li {
+    background-color: salmon;
+    padding: 0.8em;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.container {
+  @include mixin.flex-box(row, space-around);
+  width: 600px;
+  height: 400px;
+  background-color: #eaeaea;
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: #bada55;
+    text-align: center;
+    line-height: 60px;
+  }
+}
